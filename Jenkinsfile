@@ -10,6 +10,11 @@ pipeline {
 ls -lah'''
       }
     }
+    stage('End') {
+      steps {
+        echo 'Done with the pipeline'
+      }
+    }
   }
   environment {
     Build = ''

@@ -9,5 +9,10 @@ pipeline {
 '''
       }
     }
+    stage('Upload file to AWS') {
+      steps {
+        s3Upload 'jenkins'
+      }
+    }
   }
 }
